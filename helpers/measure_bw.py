@@ -72,11 +72,14 @@ def update(data):
     global args
     if (args.npf):
         if args.epoch:
-            t = (dt.datetime.now() - start).total_seconds()
+            #t = int(dt.datetime.now().timestamp()*1e9)
+            t = int(dt.datetime.now().timestamp()) # We are fine with seconds precision
+            print(f"{t}-RESULT-RX_BPS_{args.name} {data['rx_bps']}")
+            print(f"{t}-RESULT-TX_BPS_{args.name} {data['tx_bps']}")
         else:
             t = (dt.datetime.now() - start).total_seconds()
-        print(f"BW-{t}-RESULT-RX_BPS_{args.name} {data['rx_bps']}")
-        print(f"BW-{t}-RESULT-TX_BPS_{args.name} {data['tx_bps']}")
+            print(f"BW-{t}-RESULT-RX_BPS_{args.name} {data['rx_bps']}")
+            print(f"BW-{t}-RESULT-TX_BPS_{args.name} {data['tx_bps']}")
     else:
         print_bw(data)
 
@@ -139,7 +142,7 @@ if __name__ == "__main__":
     parser.add_argument("--outdir", default=None, type=str)
     parser.add_argument("--name", default="", type=str)
     parser.add_argument("--npf", action="store_true")
-    parser.add_argument("--epoch", action="store_true")
+    parser.add_argument("--epoch", action="store_true", help="Print epoch in ns, without BW- prefix")
     args = parser.parse_args()
 
     if args.read != None:
