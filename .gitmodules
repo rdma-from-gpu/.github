@@ -1,0 +1,12 @@
+[submodule "apps/extern/extern/gflags"]
+	path = apps/extern/extern/gflags
+	url = https://github.com/gflags/gflags.git
+[submodule "apps/extern/extern/glog"]
+	path = apps/extern/extern/glog
+	url = https://github.com/google/glog.git
+[submodule "apps/extern/glog"]
+	path = apps/extern/glog
+	url = https://github.com/google/glog.git
+[submodule "apps/extern/gflags"]
+	path = apps/extern/gflags
+	url = https://github.com/gflags/gflags.git
