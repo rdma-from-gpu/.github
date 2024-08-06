@@ -10,3 +10,6 @@
 [submodule "apps/extern/gflags"]
 	path = apps/extern/gflags
 	url = https://github.com/gflags/gflags.git
+[submodule "tvm"]
+	path = tvm
+	url = git@github.com:rdma-from-gpu/tvm.git

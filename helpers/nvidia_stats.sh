@@ -11,7 +11,7 @@ START=$(date +%s.%3N)
 while true; do
 	nvidia-smi  --query-gpu=memory.used,utilization.gpu,utilization.memory,power.draw --format=csv,nounits,noheader --id ${CUDA_DEVICE} > /tmp/nvidia_smi.txt
   #NOW=$(echo "$(date +%s.%3N) - ${START}" | bc -l)
-  NOW=$(echo "$(date +%s%3N)")
+  NOW=$(echo "$(date +%s)")
 	echo "${NOW}-RESULT-GPUMEM " $(cut -d, -f1 /tmp/nvidia_smi.txt)
 	echo ${NOW}"-RESULT-GPUMEMPERC " $(cut -d, -f3 /tmp/nvidia_smi.txt)
 	echo ${NOW}"-RESULT-GPUPERC " $(cut -d, -f2 /tmp/nvidia_smi.txt)

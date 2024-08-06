@@ -6,13 +6,10 @@ This is the public code release for our paper "Toward GPU-centric Networking on 
 
 - [rdma-core](./rdma-core) is a fork of the upstream `rdma-core` project, with additions to exposed internals structures to our shim layer.
 - [rdma-shim](./rdma-shim) is our shim layer around `rdma-core`, providing the API for RDMA operations from CUDA.
-- [apps](./apps) contains a set of demo applications to show the functionalities of our library (TODO)
-- [experiments](./experiments) provides the script and test harness to measure the performance of our prototype (TODO)
+- [apps](./apps) contains a set of demo applications to show the functionalities of our library
+- [experiments](./experiments) provides the script and test harness to measure the performance of our prototype. These are run through ansible.
 - [modelzoo](./modelzoo) is a set of ML models used to benchmark our inference serving application in a realistic scenario
-- [tvm](./tvm) is a fork of TVM, with small additions to allow direct memory access to some internals. This is based on Clockwork's fork
-
-
-
+- [tvm](./tvm) is a fork of TVM, with small additions to allow direct memory access to some internals. This is based on [Clockwork's fork](https://gitlab.mpi-sws.org/cld/ml/tvm).
 
 # Cite us
 
