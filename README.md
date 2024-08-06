@@ -13,6 +13,7 @@ This is the public code release for our paper "Toward GPU-centric Networking on 
 
 # Cite us
 
+```
 @inproceedings{10.1145/3642968.3654820,
 author = {Girondi, Massimo and Scazzariello, Mariano and Maguire, Gerald Q. and Kosti\'{c}, Dejan},
 title = {Toward GPU-centric Networking on Commodity Hardware},
@@ -30,6 +31,7 @@ keywords = {Commodity Hardware, GPUs, Inference Serving, RDMA},
 location = {Athens, Greece},
 series = {EdgeSys '24}
 }
+```
 
 
 
