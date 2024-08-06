@@ -13,3 +13,15 @@
 [submodule "tvm"]
 	path = tvm
 	url = git@github.com:rdma-from-gpu/tvm.git
+[submodule "experiments"]
+	path = experiments
+	url = https://github.com/rdma-from-gpu/experiments.git
+[submodule "rdma-core"]
+	path = rdma-core
+	url = https://github.com/rdma-from-gpu/rdma-core.git
+[submodule "rdma-shim"]
+	path = rdma-shim
+	url = https://github.com/rdma-from-gpu/rdma-shim.git
+[submodule "apps"]
+	path = apps
+	url = https://github.com/rdma-from-gpu/apps.git
