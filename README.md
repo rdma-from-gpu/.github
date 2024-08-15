@@ -37,3 +37,5 @@ series = {EdgeSys '24}
 
 # License
 The code in this repository, unless otherwise stated, is released under the GNU GPL v3 license. See [LICENSE](LICENSE).
+
+The original TVM and rdma-core sources are redistributed under their original license, while the additions are distributed under the GNU GPL v3 license. 

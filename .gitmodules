@@ -25,3 +25,6 @@
 [submodule "apps"]
 	path = apps
 	url = https://github.com/rdma-from-gpu/apps.git
+[submodule "modelzoo"]
+	path = modelzoo
+	url = https://github.com/rdma-from-gpu/modelzoo.git
