@@ -1,4 +1,10 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13332456.svg)](https://doi.org/10.5281/zenodo.13332456)
+
 This is the public code release for our paper "Toward GPU-centric Networking on Commodity Hardware", published at [EdgeSys 24](https://dl.acm.org/doi/10.1145/3642968.3654820).
+
+
+
+
 
 The code is organized in several sub-repositories, which can all be retrieved with a single clone of the "special" `.github` repo:
 
