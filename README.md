@@ -1,8 +1,14 @@
-This is the public code release for our paper "Toward GPU-centric Networking on Commodity Hardware".
+This is the public code release for our paper "Toward GPU-centric Networking on Commodity Hardware", published at [EdgeSys 24](https://dl.acm.org/doi/10.1145/3642968.3654820).
+
+The code is organized in several sub-repositories, which can all be retrieved with a single clone of the "special" `.github` repo:
+
+```
+git clone --recursive --recurse-submodules https://github.com/rdma-from-gpu/.github rdma-from-gpu
+```
 
 
 
-# Folders
+# Sub repositories 
 
 - [rdma-core](./rdma-core) is a fork of the upstream `rdma-core` project, with additions to exposed internals structures to our shim layer.
 - [rdma-shim](./rdma-shim) is our shim layer around `rdma-core`, providing the API for RDMA operations from CUDA.
@@ -36,6 +42,7 @@ series = {EdgeSys '24}
 
 
 # License
-The code in this repository, unless otherwise stated, is released under the GNU GPL v3 license. See [LICENSE](LICENSE).
+The code in this release, unless otherwise stated, is released under the GNU GPL v3 license. See [LICENSE](LICENSE).
+When using this code, please cite also the paper above.
 
 The original TVM and rdma-core sources are redistributed under their original license, while the additions are distributed under the GNU GPL v3 license. 
