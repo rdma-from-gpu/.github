@@ -10,12 +10,12 @@ git clone --recursive --recurse-submodules https://github.com/rdma-from-gpu/.git
 
 # Sub repositories 
 
-- [rdma-core](/rdma-core) is a fork of the upstream `rdma-core` project, with additions to exposed internals structures to our shim layer.
-- [rdma-shim](/rdma-shim) is our shim layer around `rdma-core`, providing the API for RDMA operations from CUDA.
-- [apps](/apps) contains a set of demo applications to show the functionalities of our library
-- [experiments](/experiments) provides the script and test harness to measure the performance of our prototype. These are run through ansible.
-- [modelzoo](/modelzoo) is a set of ML models used to benchmark our inference serving application in a realistic scenario
-- [tvm](/tvm) is a fork of TVM, with small additions to allow direct memory access to some internals. This is based on [Clockwork's fork](https://gitlab.mpi-sws.org/cld/ml/tvm).
+- [rdma-core](https://github.com/rdma-from-gpu/rdma-core) is a fork of the upstream `rdma-core` project, with additions to exposed internals structures to our shim layer.
+- [rdma-shim](https://github.com/rdma-from-gpu/rdma-shim) is our shim layer around `rdma-core`, providing the API for RDMA operations from CUDA.
+- [apps](https://github.com/rdma-from-gpu/apps) contains a set of demo applications to show the functionalities of our library
+- [experiments](https://github.com/rdma-from-gpu/experiments) provides the script and test harness to measure the performance of our prototype. These are run through ansible.
+- [modelzoo](https://github.com/rdma-from-gpu/modelzoo) is a set of ML models used to benchmark our inference serving application in a realistic scenario
+- [tvm](https://github.com/rdma-from-gpu/tvm) is a fork of TVM, with small additions to allow direct memory access to some internals. This is based on [Clockwork's fork](https://gitlab.mpi-sws.org/cld/ml/tvm).
 
 # Cite us
 
