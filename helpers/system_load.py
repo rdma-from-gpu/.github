@@ -20,6 +20,19 @@ def on_exit(sig, frame):
 
 
 
+def parse_cores(cores):
+    new_cores = []
+    for c in cores.split(","):
+        if "-" in c:
+            start, stop = c.split("-")
+            these = list(range(int(start), int(stop)+1))
+            new_cores += these
+        else:
+            new_cores += [c]
+    return new_cores
+
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--interval", default=1, type=float)
 parser.add_argument("--ncores", default=-1, type=int)
@@ -43,19 +56,11 @@ if args.cores == "":
         cores = numa.info.node_to_cpus(args.numa)
         if args.ncores != -1:
             cores = cores[:args.ncores]
-elif "-" in args.cores:
-    cores = args.cores.split("-")
-    cores = list(range(int(cores[0]), int(cores[1])+1))
-elif "," in args.cores:
-    cores = [int(c) for c in args.cores.split(",")]
-elif args.cores.isdecimal:
-    cores = [int(args.cores)]
 else:
-    print("Wrong cores specification!")
-    exit(1)
+    cores = parse_cores(args.cores)
 
 ncores = len(cores)
-print(cores)
+print("Collecting stats from cores", cores)
 
 power_sensor = None
 if args.power:
